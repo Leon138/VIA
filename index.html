@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="icon" href="img/logo.png" type="image/png" />
+		<title>VIA</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__location">
+					<svg
+						class="header__icon"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="25"
+						viewBox="0 0 24 25"
+						fill="none"
+					>
+						<path
+							d="M12 2.5C7.6 2.5 4 6.1 4 10.5C4 15.9 11 22 11.3 22.3C11.5 22.4 11.8 22.5 12 22.5C12.2 22.5 12.5 22.4 12.7 22.3C13 22 20 15.9 20 10.5C20 6.1 16.4 2.5 12 2.5ZM12 20.2C9.9 18.2 6 13.9 6 10.5C6 7.2 8.7 4.5 12 4.5C15.3 4.5 18 7.2 18 10.5C18 13.8 14.1 18.2 12 20.2ZM12 6.5C9.8 6.5 8 8.3 8 10.5C8 12.7 9.8 14.5 12 14.5C14.2 14.5 16 12.7 16 10.5C16 8.3 14.2 6.5 12 6.5ZM12 12.5C10.9 12.5 10 11.6 10 10.5C10 9.4 10.9 8.5 12 8.5C13.1 8.5 14 9.4 14 10.5C14 11.6 13.1 12.5 12 12.5Z"
+							fill="white"
+						/>
+					</svg>
+					<span class="header__city">Минск</span>
+				</a>
+				<div class="header__wrapper">
+					<nav class="header__nav">
+						<ul class="header__menu">
+							<li class="header__item">
+								<a href="#" class="header__link">Услуги</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Новости</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Портфолио</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="subheader">
+			<div class="subheader__container">
+				<div class="subheader__branding subheader-branding">
+					<a href="#" class="logo subheader-branding__logo"></a>
+					<div class="subheader-branding__divider"></div>
+					<div class="subheader-branding__slogan">
+						Мы не допускаем типовых решений,<br />нам интересно всякий раз
+						создавать новое!
+					</div>
+				</div>
+				<form action="#" class="search">
+					<input
+						type="text"
+						name="query"
+						class="search__input"
+						placeholder="Поиск"
+						autocomplete="off"
+					/>
+					<button type="submit" class="search__button" aria-label="Поиск">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+						>
+							<path
+								d="M10 4.5C6.68629 4.5 4 7.18629 4 10.5C4 13.8137 6.68629 16.5 10 16.5C13.3137 16.5 16 13.8137 16 10.5C16 7.18629 13.3137 4.5 10 4.5ZM2 10.5C2 6.08172 5.58172 2.5 10 2.5C14.4183 2.5 18 6.08172 18 10.5C18 12.3487 17.3729 14.051 16.3199 15.4056L21.7071 20.7929C22.0976 21.1834 22.0976 21.8166 21.7071 22.2071C21.3166 22.5976 20.6834 22.5976 20.2929 22.2071L14.9056 16.8199C13.551 17.8729 11.8487 18.5 10 18.5C5.58172 18.5 2 14.9183 2 10.5Z"
+								fill="#1FA547"
+							/>
+						</svg>
+					</button>
+				</form>
+				<div class="subheader__schedule subheader-schedule">
+					<p class="subheader-schedule__title">График работы:</p>
+					<p class="subheader-schedule__time">Пн-Пт, 9:00 - 18:00</p>
+				</div>
+				<a href="#" class="subheader__social social whatsapp">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="17"
+						height="18"
+						viewBox="0 0 17 18"
+						fill="none"
+					>
+						<path
+							d="M8.50678 17.5C7.01877 17.5 5.55794 17.1059 4.26698 16.3585L0.951237 17.5L1.63069 13.994C0.563947 12.5332 0 10.8141 0 9C0 4.31175 3.81174 0.5 8.49998 0.5C13.1882 0.5 17 4.31175 17 9C17.0136 13.6815 13.2018 17.5 8.50678 17.5ZM4.42325 14.9656L4.68144 15.1287C5.83652 15.8557 7.16146 16.2362 8.51357 16.2362C12.502 16.2362 15.7498 12.9884 15.7498 9C15.7498 5.01159 12.502 1.76379 8.51357 1.76379C4.51838 1.75699 1.27058 5.0048 1.27058 8.99321C1.27058 10.6171 1.80056 12.1527 2.80615 13.4436L2.98281 13.6679L2.60911 15.5839L4.42325 14.9656Z"
+							fill="white"
+						/>
+						<path
+							d="M4.21936 5.73179C4.21936 5.73179 4.71536 4.86209 5.12303 4.80773C5.53071 4.76017 6.05389 4.76017 6.19657 5.02516C6.33926 5.29014 6.97115 6.8393 6.97115 6.8393C6.97115 6.8393 7.07986 7.10429 6.91 7.36249C6.74014 7.61389 6.36644 7.98759 6.36644 7.98759C6.36644 7.98759 6.15581 8.25257 6.36644 8.53795C6.57707 8.82332 6.89641 9.3397 7.56228 10.0056C8.22814 10.6714 9.50552 11.1471 9.50552 11.1471C9.50552 11.1471 9.68897 11.1742 9.80448 11.0587C9.91999 10.9432 10.5519 10.1551 10.5519 10.1551C10.5519 10.1551 10.7557 9.89686 11.0886 10.0463C11.4216 10.2026 12.8824 10.9296 12.8824 10.9296C12.8824 10.9296 13.0523 10.9908 13.0523 11.249C13.0523 11.5072 12.9504 12.1391 12.7329 12.3497C12.5223 12.5603 11.8972 13.2194 10.9596 13.2194C10.0219 13.2194 7.79329 12.4584 6.60425 11.2694C5.4152 10.0803 4.36205 8.87768 4.11065 7.78375C3.87963 6.67624 3.91361 6.18023 4.21936 5.73179Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+				<a href="#" class="subheader__social social telegram">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="17"
+						height="14"
+						viewBox="0 0 17 14"
+						fill="none"
+					>
+						<path
+							d="M16.1616 0C16.1049 0 16.0401 0.00809995 15.9834 0.0323999L0.326135 5.98589C-0.119364 6.15599 -0.103164 6.77969 0.342335 6.93359L3.97113 8.15668L6.15812 12.5388L6.16622 12.5469C6.20672 12.6279 6.28772 12.6765 6.37682 12.6765C6.42542 12.6765 6.48212 12.6603 6.53072 12.6198L8.58002 10.8783L6.28772 9.14488L6.46592 11.4291L4.82162 8.01898L13.5696 2.76209L6.28772 9.13678L11.9577 13.4379C12.144 13.5837 12.3627 13.6485 12.5814 13.6485C13.0269 13.6485 13.4643 13.3569 13.5858 12.8628L16.6476 0.607499C16.7286 0.299699 16.4694 0 16.1616 0Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+				<div class="dropdown-phone">
+					<div class="dropdown-phone__toggle">
+						<span class="dropdown-phone__icon-phone">
+							<a href="tel:+79103606392">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									viewBox="0 0 25 25"
+									fill="none"
+								>
+									<path
+										d="M21.4283 16.9767V19.6864C21.4326 20.7223 20.5012 21.5873 19.4553 21.4929C10.429 21.5 3.42896 14.435 3.43602 5.46919C3.34183 4.42895 4.20253 3.50106 5.23706 3.50009H7.9522C8.39143 3.49577 8.81724 3.651 9.15027 3.93684C10.0971 4.74949 10.7061 7.50777 10.4718 8.60428C10.2888 9.46036 9.42586 10.0593 8.83915 10.6448C10.1275 12.9062 12.0036 14.7785 14.2694 16.0644C14.8561 15.4788 15.4563 14.6176 16.314 14.435C17.4144 14.2008 20.1904 14.8106 20.9998 15.764C21.2869 16.1021 21.4394 16.5337 21.4283 16.9767Z"
+										stroke="#1FA547"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</a>
+						</span>
+						<span>+9 999 999 99 99</span>
+						<span class="dropdown-phone__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+							>
+								<path
+									d="M5.29289 8.79289C5.68342 8.40237 6.31658 8.40237 6.70711 8.79289L12 14.0858L17.2929 8.79289C17.6834 8.40237 18.3166 8.40237 18.7071 8.79289C19.0976 9.18342 19.0976 9.81658 18.7071 10.2071L12.7071 16.2071C12.3166 16.5976 11.6834 16.5976 11.2929 16.2071L5.29289 10.2071C4.90237 9.81658 4.90237 9.18342 5.29289 8.79289Z"
+									fill="#26B447"
+								/>
+								</svg
+						></span>
+					</div>
+					<ul class="dropdown-phone__menu">
+						<li><a href="#">+9 999 999 99 99</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="hero__content">
+							<h1 class="title hero__title">
+								Создаем комфортную среду в гармонии с природой!
+							</h1>
+							<p class="hero__subtitle">
+								Мы любим то, что делаем. В приоритете комплексный уход за садом
+								и любой озелененной территорией.
+							</p>
+							<button data-open-form class="button hero__button">
+								Вызвать дизайнера
+							</button>
+						</div>
+						<div class="swiper hero__slider slider-hero">
+							<div class="swiper-wrapper slider-hero__wrapper">
+								<div class="swiper-slide slider-hero__slide">
+									<img src="img/hero/heroSliderImg1.jpg" alt="heroSliderImg1" />
+								</div>
+								<div class="swiper-slide slider-hero__slide">
+									<img src="img/hero/heroSliderImg1.jpg" alt="heroSliderImg1" />
+								</div>
+								<div class="swiper-slide slider-hero__slide">
+									<img src="img/hero/heroSliderImg1.jpg" alt="heroSliderImg1" />
+								</div>
+								<div class="swiper-slide slider-hero__slide">
+									<img src="img/hero/heroSliderImg1.jpg" alt="heroSliderImg1" />
+								</div>
+							</div>
+							<div class="slider-hero__button-prev">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="44"
+									height="44"
+									viewBox="0 0 44 44"
+									fill="none"
+								>
+									<path
+										d="M25.5816 31.5816C26.1395 31.0237 26.1395 30.1192 25.5816 29.5613L18.0203 22L25.5816 14.4387C26.1395 13.8808 26.1395 12.9763 25.5816 12.4184C25.0237 11.8605 24.1192 11.8605 23.5613 12.4184L14.9898 20.9898C14.432 21.5477 14.432 22.4523 14.9898 23.0102L23.5613 31.5816C24.1192 32.1395 25.0237 32.1395 25.5816 31.5816Z"
+										fill="#26B447"
+									/>
+								</svg>
+							</div>
+							<div class="slider-hero__button-next">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="44"
+									height="44"
+									viewBox="0 0 44 44"
+									fill="none"
+								>
+									<path
+										d="M18.4184 31.5816C17.8605 31.0237 17.8605 30.1192 18.4184 29.5613L25.9797 22L18.4184 14.4387C17.8605 13.8808 17.8605 12.9763 18.4184 12.4184C18.9763 11.8605 19.8808 11.8605 20.4387 12.4184L29.0102 20.9898C29.568 21.5477 29.568 22.4523 29.0102 23.0102L20.4387 31.5816C19.8808 32.1395 18.9763 32.1395 18.4184 31.5816Z"
+										fill="#26B447"
+									/>
+								</svg>
+							</div>
+							<div class="hero__pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="service">
+				<div class="service__container">
+					<h2 class="title service__title">Наши услуги</h2>
+					<div class="swiper service__slider slider-service">
+						<div class="swiper-wrapper slider-service__wrapper">
+							<div
+								data-open-form
+								class="swiper-slide slider-service__slide slide-slider-service"
+							>
+								<img src="img/service/slide1.jpg" alt="serviceImg1" />
+								<div class="slide-slider-service__overlay">
+									<div class="slide-slider-service__title">
+										Ландшафтные работы
+									</div>
+									<div class="slide-slider-service__button">Заказать</div>
+								</div>
+							</div>
+							<div data-open-form class="swiper-slide slider-service__slide">
+								<img src="img/service/slide2.jpg" alt="serviceImg2" />
+								<div class="slide-slider-service__overlay">
+									<div class="slide-slider-service__title">
+										Озеленение участка
+									</div>
+									<div class="slide-slider-service__button">Заказать</div>
+								</div>
+							</div>
+							<div data-open-form class="swiper-slide slider-service__slide">
+								<img src="img/service/slide3.jpg" alt="serviceImg3" />
+								<div class="slide-slider-service__overlay">
+									<div class="slide-slider-service__title">
+										Устройство водоемов
+									</div>
+									<div class="slide-slider-service__button">Заказать</div>
+								</div>
+							</div>
+							<div data-open-form class="swiper-slide slider-service__slide">
+								<img src="img/service/slide4.jpg" alt="serviceImg4" />
+								<div class="slide-slider-service__overlay">
+									<div class="slide-slider-service__title">
+										Автоматический полив
+									</div>
+									<div class="slide-slider-service__button">Заказать</div>
+								</div>
+							</div>
+							<div data-open-form class="swiper-slide slider-service__slide">
+								<img src="img/service/slide5.jpg" alt="serviceImg5" />
+								<div class="slide-slider-service__overlay">
+									<div class="slide-slider-service__title">
+										Устройство газонов
+									</div>
+									<div class="slide-slider-service__button">Заказать</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="service__scrollbar"></div>
+					<a href="#" class="watch-all service__all">Смотреть все услуги</a>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="about__wrapper">
+					<div class="about__main">
+						<div class="about__content">
+							<h2 class="title about__title">О нас</h2>
+							<p class="about__text">
+								Компания Green History образовалась в 2006 году на полном
+								энтузиазме и огромном увлечении в области ландшафтного дизайна.
+								Начало было  положено, первыми заказчиками были знакомые и
+								родственники. С каждым шагом, с каждой книжкой, с каждым
+								проектом мы двигали наше общее дело дальше. Были у нас и
+								промахи, недочеты. Но мы взяли для себя принципиальность, что
+								клиент должен быть всегда доволен нашей работой — и мы
+								переделывали. Говорить о том, что мы заканчивали
+								специализированные высшие учебные заведение в области
+								ландшафтного дизайна, получали ученые степени — мы не станем.
+								Просто мы любим свое дело.<br /><br />Каждый проект для нас —
+								это возможность самореализовать  себя как профессионалов своего
+								дела. Будь то, водоем или ручей, система автоматического полива,
+								подпорная стенка или мощение, ландшафтная композиция из
+								многолетних растений. Мы добиваемся совершенства. 
+							</p>
+							<button class="about__button">
+								<span
+									>Подробнее<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071Z"
+											fill="#26B447"
+										/></svg
+								></span>
+							</button>
+						</div>
+					</div>
+					<div class="about__img">
+						<img src="img/about/aboutBG.jpg" alt="aboutBG" />
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="news__container">
+					<h2 class="title news__title">Новости</h2>
+					<div class="news__wrapper">
+						<div data-open-news class="news__item item-news">
+							<div class="item-news__date">8 мая 2024</div>
+							<h3 class="item-news__title">Поздравляем всех с 9 мая!</h3>
+							<button class="item-news__button">Подробнее</button>
+						</div>
+						<div data-open-news class="news__item item-news">
+							<div class="item-news__date">8 мая 2024</div>
+							<h3 class="item-news__title">
+								График работы на майские праздники
+							</h3>
+							<button class="item-news__button">Подробнее</button>
+						</div>
+						<div data-open-news class="news__item item-news">
+							<div class="item-news__date">8 мая 2024</div>
+							<h3 class="item-news__title">У нас появилась новая услуга!</h3>
+							<button class="item-news__button">Подробнее</button>
+						</div>
+					</div>
+					<a href="#" class="watch-all news__all">Читать все новости</a>
+				</div>
+			</section>
+			
+			<section class="gallery">
+				<div class="gallery__container">
+					<h2 class="title gallery__title">Галерея работ</h2>
+					<div class="swiper gallery__slider slider-gallery">
+						<div class="swiper-wrapper slider-gallery__wrapper">
+							<div
+								class="swiper-slide slider-gallery__slide slide-slider-gallery"
+							>
+								<img src="img/gallery/slide1.jpg" alt="galleryImg1" />
+								<div class="slide-slider-gallery__overlay"></div>
+								<div class="slide-slider-gallery__zoom">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="109"
+										height="109"
+										viewBox="0 0 109 109"
+										fill="none"
+									>
+										<path
+											d="M45.4166 18.1666C30.3668 18.1666 18.1666 30.3668 18.1666 45.4166C18.1666 60.4663 30.3668 72.6666 45.4166 72.6666C60.4663 72.6666 72.6666 60.4663 72.6666 45.4166C72.6666 30.3668 60.4663 18.1666 45.4166 18.1666ZM9.08325 45.4166C9.08325 25.3502 25.3502 9.08325 45.4166 9.08325C65.4829 9.08325 81.7499 25.3502 81.7499 45.4166C81.7499 53.8128 78.9019 61.5439 74.1193 67.6964L98.5864 92.1635C100.36 93.9371 100.36 96.8127 98.5864 98.5864C96.8127 100.36 93.9371 100.36 92.1635 98.5864L67.6964 74.1193C61.5439 78.9019 53.8128 81.7499 45.4166 81.7499C25.3502 81.7499 9.08325 65.4829 9.08325 45.4166ZM45.4166 31.7916C47.9249 31.7916 49.9583 33.825 49.9583 36.3333V40.8749H54.4999C57.0082 40.8749 59.0416 42.9083 59.0416 45.4166C59.0416 47.9249 57.0082 49.9583 54.4999 49.9583H49.9583V54.4999C49.9583 57.0082 47.9249 59.0416 45.4166 59.0416C42.9083 59.0416 40.8749 57.0082 40.8749 54.4999V49.9583H36.3333C33.825 49.9583 31.7916 47.9249 31.7916 45.4166C31.7916 42.9083 33.825 40.8749 36.3333 40.8749H40.8749V36.3333C40.8749 33.825 42.9083 31.7916 45.4166 31.7916Z"
+											fill="white"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div
+								class="swiper-slide slider-gallery__slide slide-slider-gallery"
+							>
+								<img src="img/gallery/slide2.jpg" alt="galleryImg2" />
+								<div class="slide-slider-gallery__overlay"></div>
+								<div class="slide-slider-gallery__zoom">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="109"
+										height="109"
+										viewBox="0 0 109 109"
+										fill="none"
+									>
+										<path
+											d="M45.4166 18.1666C30.3668 18.1666 18.1666 30.3668 18.1666 45.4166C18.1666 60.4663 30.3668 72.6666 45.4166 72.6666C60.4663 72.6666 72.6666 60.4663 72.6666 45.4166C72.6666 30.3668 60.4663 18.1666 45.4166 18.1666ZM9.08325 45.4166C9.08325 25.3502 25.3502 9.08325 45.4166 9.08325C65.4829 9.08325 81.7499 25.3502 81.7499 45.4166C81.7499 53.8128 78.9019 61.5439 74.1193 67.6964L98.5864 92.1635C100.36 93.9371 100.36 96.8127 98.5864 98.5864C96.8127 100.36 93.9371 100.36 92.1635 98.5864L67.6964 74.1193C61.5439 78.9019 53.8128 81.7499 45.4166 81.7499C25.3502 81.7499 9.08325 65.4829 9.08325 45.4166ZM45.4166 31.7916C47.9249 31.7916 49.9583 33.825 49.9583 36.3333V40.8749H54.4999C57.0082 40.8749 59.0416 42.9083 59.0416 45.4166C59.0416 47.9249 57.0082 49.9583 54.4999 49.9583H49.9583V54.4999C49.9583 57.0082 47.9249 59.0416 45.4166 59.0416C42.9083 59.0416 40.8749 57.0082 40.8749 54.4999V49.9583H36.3333C33.825 49.9583 31.7916 47.9249 31.7916 45.4166C31.7916 42.9083 33.825 40.8749 36.3333 40.8749H40.8749V36.3333C40.8749 33.825 42.9083 31.7916 45.4166 31.7916Z"
+											fill="white"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div
+								class="swiper-slide slider-gallery__slide slide-slider-gallery"
+							>
+								<img src="img/gallery/slide1.jpg" alt="galleryImg3" />
+								<div class="slide-slider-gallery__overlay"></div>
+								<div class="slide-slider-gallery__zoom">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="109"
+										height="109"
+										viewBox="0 0 109 109"
+										fill="none"
+									>
+										<path
+											d="M45.4166 18.1666C30.3668 18.1666 18.1666 30.3668 18.1666 45.4166C18.1666 60.4663 30.3668 72.6666 45.4166 72.6666C60.4663 72.6666 72.6666 60.4663 72.6666 45.4166C72.6666 30.3668 60.4663 18.1666 45.4166 18.1666ZM9.08325 45.4166C9.08325 25.3502 25.3502 9.08325 45.4166 9.08325C65.4829 9.08325 81.7499 25.3502 81.7499 45.4166C81.7499 53.8128 78.9019 61.5439 74.1193 67.6964L98.5864 92.1635C100.36 93.9371 100.36 96.8127 98.5864 98.5864C96.8127 100.36 93.9371 100.36 92.1635 98.5864L67.6964 74.1193C61.5439 78.9019 53.8128 81.7499 45.4166 81.7499C25.3502 81.7499 9.08325 65.4829 9.08325 45.4166ZM45.4166 31.7916C47.9249 31.7916 49.9583 33.825 49.9583 36.3333V40.8749H54.4999C57.0082 40.8749 59.0416 42.9083 59.0416 45.4166C59.0416 47.9249 57.0082 49.9583 54.4999 49.9583H49.9583V54.4999C49.9583 57.0082 47.9249 59.0416 45.4166 59.0416C42.9083 59.0416 40.8749 57.0082 40.8749 54.4999V49.9583H36.3333C33.825 49.9583 31.7916 47.9249 31.7916 45.4166C31.7916 42.9083 33.825 40.8749 36.3333 40.8749H40.8749V36.3333C40.8749 33.825 42.9083 31.7916 45.4166 31.7916Z"
+											fill="white"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div
+								class="swiper-slide slider-gallery__slide slide-slider-gallery"
+							>
+								<img src="img/gallery/slide1.jpg" alt="galleryImg4" />
+								<div class="slide-slider-gallery__overlay"></div>
+								<div class="slide-slider-gallery__zoom">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="109"
+										height="109"
+										viewBox="0 0 109 109"
+										fill="none"
+									>
+										<path
+											d="M45.4166 18.1666C30.3668 18.1666 18.1666 30.3668 18.1666 45.4166C18.1666 60.4663 30.3668 72.6666 45.4166 72.6666C60.4663 72.6666 72.6666 60.4663 72.6666 45.4166C72.6666 30.3668 60.4663 18.1666 45.4166 18.1666ZM9.08325 45.4166C9.08325 25.3502 25.3502 9.08325 45.4166 9.08325C65.4829 9.08325 81.7499 25.3502 81.7499 45.4166C81.7499 53.8128 78.9019 61.5439 74.1193 67.6964L98.5864 92.1635C100.36 93.9371 100.36 96.8127 98.5864 98.5864C96.8127 100.36 93.9371 100.36 92.1635 98.5864L67.6964 74.1193C61.5439 78.9019 53.8128 81.7499 45.4166 81.7499C25.3502 81.7499 9.08325 65.4829 9.08325 45.4166ZM45.4166 31.7916C47.9249 31.7916 49.9583 33.825 49.9583 36.3333V40.8749H54.4999C57.0082 40.8749 59.0416 42.9083 59.0416 45.4166C59.0416 47.9249 57.0082 49.9583 54.4999 49.9583H49.9583V54.4999C49.9583 57.0082 47.9249 59.0416 45.4166 59.0416C42.9083 59.0416 40.8749 57.0082 40.8749 54.4999V49.9583H36.3333C33.825 49.9583 31.7916 47.9249 31.7916 45.4166C31.7916 42.9083 33.825 40.8749 36.3333 40.8749H40.8749V36.3333C40.8749 33.825 42.9083 31.7916 45.4166 31.7916Z"
+											fill="white"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div
+								class="swiper-slide slider-gallery__slide slide-slider-gallery"
+							>
+								<img src="img/gallery/slide1.jpg" alt="galleryImg5" />
+								<div class="slide-slider-gallery__overlay"></div>
+								<div class="slide-slider-gallery__zoom">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="109"
+										height="109"
+										viewBox="0 0 109 109"
+										fill="none"
+									>
+										<path
+											d="M45.4166 18.1666C30.3668 18.1666 18.1666 30.3668 18.1666 45.4166C18.1666 60.4663 30.3668 72.6666 45.4166 72.6666C60.4663 72.6666 72.6666 60.4663 72.6666 45.4166C72.6666 30.3668 60.4663 18.1666 45.4166 18.1666ZM9.08325 45.4166C9.08325 25.3502 25.3502 9.08325 45.4166 9.08325C65.4829 9.08325 81.7499 25.3502 81.7499 45.4166C81.7499 53.8128 78.9019 61.5439 74.1193 67.6964L98.5864 92.1635C100.36 93.9371 100.36 96.8127 98.5864 98.5864C96.8127 100.36 93.9371 100.36 92.1635 98.5864L67.6964 74.1193C61.5439 78.9019 53.8128 81.7499 45.4166 81.7499C25.3502 81.7499 9.08325 65.4829 9.08325 45.4166ZM45.4166 31.7916C47.9249 31.7916 49.9583 33.825 49.9583 36.3333V40.8749H54.4999C57.0082 40.8749 59.0416 42.9083 59.0416 45.4166C59.0416 47.9249 57.0082 49.9583 54.4999 49.9583H49.9583V54.4999C49.9583 57.0082 47.9249 59.0416 45.4166 59.0416C42.9083 59.0416 40.8749 57.0082 40.8749 54.4999V49.9583H36.3333C33.825 49.9583 31.7916 47.9249 31.7916 45.4166C31.7916 42.9083 33.825 40.8749 36.3333 40.8749H40.8749V36.3333C40.8749 33.825 42.9083 31.7916 45.4166 31.7916Z"
+											fill="white"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__scrollbar"></div>
+					<a href="#" class="watch-all gallery__all">Смотреть все услуги</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<a href="#" class="logo footer__logo"></a>
+					<a
+						href="tel:+79103606392"
+						class="footer__item item-footer item-footer_1"
+					>
+						<div class="item-footer__title">Наш телефон:</div>
+						<div class="item-footer__text item-footer__text-phone">
+							+9 999 999 99 99
+						</div>
+					</a>
+					<div class="footer__item item-footer item-footer_2">
+						<div class="item-footer__title">Наш адрес:</div>
+						<div class="item-footer__text item-footer__text-address">
+							г. Минск, Проспект<br />Победителей 51
+						</div>
+					</div>
+					<a
+						href="mailto:example@example.com"
+						class="footer__item item-footer item-footer_3"
+					>
+						<div class="item-footer__title">E-mail:</div>
+						<div class="item-footer__text item-footer__text-mail">
+							example@example.com
+						</div>
+					</a>
+					<div class="footer__socials item-footer item-footer_4">
+						<a href="#" class="social whatsapp">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+							>
+								<path
+									d="M8.59247 17.5C7.10446 17.5 5.64363 17.1059 4.35267 16.3585L1.03693 17.5L1.71638 13.994C0.649641 12.5332 0.0856934 10.8141 0.0856934 9C0.0856934 4.31175 3.89744 0.5 8.58567 0.5C13.2739 0.5 17.0857 4.31175 17.0857 9C17.0992 13.6815 13.2875 17.5 8.59247 17.5ZM4.50895 14.9656L4.76714 15.1287C5.92221 15.8557 7.24715 16.2362 8.59926 16.2362C12.5877 16.2362 15.8355 12.9884 15.8355 9C15.8355 5.01159 12.5877 1.76379 8.59926 1.76379C4.60407 1.75699 1.35627 5.0048 1.35627 8.99321C1.35627 10.6171 1.88625 12.1527 2.89184 13.4436L3.0685 13.6679L2.6948 15.5839L4.50895 14.9656Z"
+									fill="#262D2A"
+								/>
+								<path
+									d="M4.30505 5.73179C4.30505 5.73179 4.80106 4.86209 5.20873 4.80773C5.6164 4.76017 6.13958 4.76017 6.28227 5.02516C6.42495 5.29014 7.05685 6.8393 7.05685 6.8393C7.05685 6.8393 7.16556 7.10429 6.99569 7.36249C6.82583 7.61389 6.45213 7.98759 6.45213 7.98759C6.45213 7.98759 6.2415 8.25257 6.45213 8.53795C6.66276 8.82332 6.98211 9.3397 7.64797 10.0056C8.31384 10.6714 9.59121 11.1471 9.59121 11.1471C9.59121 11.1471 9.77467 11.1742 9.89017 11.0587C10.0057 10.9432 10.6376 10.1551 10.6376 10.1551C10.6376 10.1551 10.8414 9.89686 11.1743 10.0463C11.5073 10.2026 12.9681 10.9296 12.9681 10.9296C12.9681 10.9296 13.138 10.9908 13.138 11.249C13.138 11.5072 13.036 12.1391 12.8186 12.3497C12.608 12.5603 11.9829 13.2194 11.0452 13.2194C10.1076 13.2194 7.87899 12.4584 6.68994 11.2694C5.50089 10.0803 4.44774 8.87768 4.19634 7.78375C3.96533 6.67624 3.9993 6.18023 4.30505 5.73179Z"
+									fill="#262D2A"
+								/>
+							</svg>
+						</a>
+						<a href="#" class="social telegram">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="17"
+								height="15"
+								viewBox="0 0 17 15"
+								fill="none"
+							>
+								<path
+									d="M16.1616 0.5C16.1049 0.5 16.0401 0.5081 15.9834 0.5324L0.326135 6.48589C-0.119364 6.65599 -0.103164 7.27969 0.342335 7.43359L3.97113 8.65668L6.15812 13.0388L6.16622 13.0469C6.20672 13.1279 6.28772 13.1765 6.37682 13.1765C6.42542 13.1765 6.48212 13.1603 6.53072 13.1198L8.58002 11.3783L6.28772 9.64488L6.46592 11.9291L4.82162 8.51898L13.5696 3.26209L6.28772 9.63678L11.9577 13.9379C12.144 14.0837 12.3627 14.1485 12.5814 14.1485C13.0269 14.1485 13.4643 13.8569 13.5858 13.3628L16.6476 1.1075C16.7286 0.799699 16.4694 0.5 16.1616 0.5Z"
+									fill="#262D2A"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__divider"></div>
+			</div>
+		</footer>
+
+		<div class="overlay"></div>
+
+		<nav class="mobile-menu">
+			<div class="mobile-menu__close"></div>
+			<ul class="mobile-menu__list">
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">О компании</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Услуги</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Портфолио</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Новости</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Контакты</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Документы</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Прайс</a>
+				</li>
+			</ul>
+			<div class="mobile-menu__socials">
+				<a href="#" class="mobile-menu__social social telegram">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="27"
+						height="23"
+						viewBox="0 0 27 23"
+						fill="none"
+					>
+						<path
+							d="M25.9624 0.882355C25.8723 0.882355 25.7694 0.895219 25.6793 0.933813L0.811924 10.3894C0.104367 10.6595 0.130096 11.6501 0.837653 11.8945L6.60103 13.8371L10.0745 20.7969L10.0874 20.8097C10.1517 20.9384 10.2803 21.0156 10.4218 21.0156C10.499 21.0156 10.5891 20.9899 10.6663 20.9255L13.921 18.1596L10.2803 15.4066L10.5634 19.0344L7.95182 13.6184L21.8457 5.26921L10.2803 15.3937L19.2856 22.2249C19.5815 22.4564 19.9288 22.5593 20.2762 22.5593C20.9837 22.5593 21.6784 22.0962 21.8714 21.3115L26.7343 1.84721C26.8629 1.35835 26.4512 0.882355 25.9624 0.882355Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+				<a href="#" class="mobile-menu__social social whatsapp">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 28 28"
+						fill="none"
+					>
+						<path
+							d="M13.8047 27.2941C11.4414 27.2941 9.12126 26.6682 7.07091 25.4812L1.80473 27.2941L2.88387 21.7258C1.18963 19.4056 0.293945 16.6754 0.293945 13.7941C0.293945 6.34809 6.34789 0.294128 13.7939 0.294128C21.2399 0.294128 27.2939 6.34809 27.2939 13.7941C27.3155 21.2294 21.2615 27.2941 13.8047 27.2941ZM7.31911 23.269L7.72918 23.5279C9.56371 24.6826 11.668 25.2869 13.8155 25.2869C20.15 25.2869 25.3083 20.1287 25.3083 13.7941C25.3083 7.4596 20.15 2.30132 13.8155 2.30132C7.47019 2.29053 2.31193 7.4488 2.31193 13.7833C2.31193 16.3625 3.15365 18.8013 4.75077 20.8517L5.03135 21.2078L4.43782 24.251L7.31911 23.269Z"
+							fill="white"
+						/>
+						<path
+							d="M6.99528 8.60344C6.99528 8.60344 7.78305 7.22215 8.43053 7.13582C9.07801 7.06028 9.90895 7.06028 10.1356 7.48114C10.3622 7.90201 11.3658 10.3624 11.3658 10.3624C11.3658 10.3624 11.5384 10.7833 11.2687 11.1934C10.9989 11.5927 10.4053 12.1862 10.4053 12.1862C10.4053 12.1862 10.0708 12.607 10.4053 13.0603C10.7399 13.5135 11.2471 14.3337 12.3046 15.3912C13.3622 16.4488 15.3909 17.2042 15.3909 17.2042C15.3909 17.2042 15.6823 17.2473 15.8658 17.0639C16.0492 16.8804 17.0528 15.6286 17.0528 15.6286C17.0528 15.6286 17.3766 15.2186 17.9053 15.456C18.4341 15.7042 20.7542 16.8588 20.7542 16.8588C20.7542 16.8588 21.024 16.956 21.024 17.366C21.024 17.7761 20.8622 18.7797 20.5168 19.1142C20.1823 19.4488 19.1895 20.4955 17.7003 20.4955C16.2111 20.4955 12.6715 19.2869 10.783 17.3984C8.89456 15.5099 7.2219 13.5998 6.82262 11.8624C6.45572 10.1034 6.50967 9.31567 6.99528 8.60344Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+			</div>
+			<div class="mobile-menu__schedule">
+				<span>График работы:</span> Пн-Пт, 9:00 - 18:00
+			</div>
+		</nav>
+		<form class="order-service-form">
+			<div class="order-service-form__background">
+				<button class="order-service-form__close-btn" type="button"></button>
+				<h2 class="order-service-form__title">Заказать услугу</h2>
+				<div class="order-service-form__dropdown">
+					<div class="order-service-form__dropdown-toggle">
+						<span>Не определено</span>
+						<span class="order-service-form__dropdown-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+							>
+								<path
+									d="M5.29289 8.79289C5.68342 8.40237 6.31658 8.40237 6.70711 8.79289L12 14.0858L17.2929 8.79289C17.6834 8.40237 18.3166 8.40237 18.7071 8.79289C19.0976 9.18342 19.0976 9.81658 18.7071 10.2071L12.7071 16.2071C12.3166 16.5976 11.6834 16.5976 11.2929 16.2071L5.29289 10.2071C4.90237 9.81658 4.90237 9.18342 5.29289 8.79289Z"
+									fill="#26B447"
+								/>
+							</svg>
+						</span>
+					</div>
+					<ul class="order-service-form__dropdown-menu">
+						<li>Вызов дизайнера</li>
+						<li>Ландшафтные работы</li>
+						<li>Озеленение участка</li>
+						<li>Устройство водоемов</li>
+						<li>Автоматический полив</li>
+						<li>Устройство газонов</li>
+					</ul>
+				</div>
+
+				<p class="order-service-form__text">
+					Спасибо, что обратились к нам!<br /><br />Как только мы получим от вас
+					сообщение, наши менеджеры постараются в кратчайшие сроки дать вам
+					исчерпывающую информацию по всем вашим вопросам.
+				</p>
+				<input
+					required
+					class="order-service-form__input order-service-form__input-name"
+					type="text"
+					placeholder="Ваше имя"
+				/>
+				<input
+					required
+					class="order-service-form__input order-service-form__input-phone"
+					type="tel"
+					placeholder="Ваш номер телефона"
+				/>
+				<textarea
+					class="order-service-form__input order-service-form__input-details"
+					placeholder="Дополнительная информация"
+				></textarea>
+				<div class="order-service-form__checkbox">
+					<input
+						class="checkbox"
+						required
+						type="checkbox"
+						id="personal-data-agreement"
+					/>
+					<label for="personal-data-agreement"
+						>Я даю согласие на обработку персональных данных в соответствии с
+						законодательством Российской Федерации</label
+					>
+				</div>
+				<button type="submit" class="button hero__button">
+					Вызвать дизайнера
+				</button>
+			</div>
+		</form>
+		<div class="news-card">
+			<h3 class="news-card__title">Поздравляем всех с 9 мая!</h3>
+			<div class="news-card__img">
+				<img src="img/news/may9.jpg" alt="may9" />
+			</div>
+			<h4 class="news-card__subtitle">
+				Поздравляем вас с великим праздником 9 мая!
+			</h4>
+			<div class="news-card__text">
+				Этот день напоминает нам о мужестве, стойкости и героизме тех, кто
+				отстоял мир на земле. Пусть этот день будет наполнен гордостью за
+				прошлое и верой в мирное будущее. Желаем вам мира, благополучия и
+				счастья. Пусть в каждом доме царят любовь и взаимопонимание. 
+			</div>
+			<div class="news-card__small-text">С праздником!</div>
+			<div class="news-card__button">Вернуться</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
